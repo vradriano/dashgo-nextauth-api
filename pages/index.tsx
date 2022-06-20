@@ -33,3 +33,8 @@ const Home: NextPage = () => {
 
 export default Home
 
+export const getServerSideProps = withSSRGuest( async () => {
+  return {
+    props: {}
+  }
+})
